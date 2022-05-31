@@ -8,7 +8,7 @@ $scope.taketext=function ()
 {
     var count=0;
  var str =$scope.name;
- if(str==undefined||str==""){
+ if(str==undefined||str==""){           //to find if the input text box is empty
      $scope.message = "Please enter data first";
  }
  else
@@ -18,7 +18,7 @@ $scope.taketext=function ()
      var i=0;
     while(1){
     try{
-        if(words[i]!=undefined)
+        if(words[i]!=undefined)         //counting the number of words
         {
         count++;
         i++;
@@ -26,8 +26,8 @@ $scope.taketext=function ()
         }
         else{
            
-            throw("error");
-            break;
+            throw("error");                 
+            
         }
     }
     catch(err){
